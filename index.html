@@ -1,0 +1,3289 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>আত্ব ত্বালাবা ঐক্য পরিষদ</title>
+
+<meta name="description"
+content="আত্ব ত্বালাবা ঐক্য পরিষদ - ঐক্য, শিক্ষা, সেবা, মানবিক সহায়তা ও সামাজিক উন্নয়নের জন্য পরিচালিত সংগঠন।">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,"Noto Sans Bengali",sans-serif;
+background:#f5f7fb;
+color:#17202a;
+line-height:1.65;
+}
+
+header{
+background:linear-gradient(135deg,#075e35,#087b42);
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 3px 15px rgba(0,0,0,.18);
+}
+
+.header-inner{
+max-width:1150px;
+margin:auto;
+padding:12px 16px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:18px;
+font-weight:bold;
+margin-bottom:11px;
+}
+
+.logo-icon{
+width:40px;
+height:40px;
+border-radius:50%;
+background:white;
+color:#075e35;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:21px;
+}
+
+nav{
+display:flex;
+gap:6px;
+overflow-x:auto;
+scrollbar-width:none;
+}
+
+nav::-webkit-scrollbar{
+display:none;
+}
+
+nav button{
+border:0;
+background:rgba(255,255,255,.14);
+color:white;
+padding:8px 11px;
+border-radius:8px;
+cursor:pointer;
+white-space:nowrap;
+font-size:12px;
+}
+
+nav button:hover{
+background:white;
+color:#075e35;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:35px 16px;
+}
+
+.hero{
+background:linear-gradient(135deg,#087b42,#0a9553);
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+.hero h1{
+font-size:35px;
+margin-bottom:10px;
+}
+
+.hero p{
+opacity:.95;
+}
+
+.hero-btn{
+margin-top:20px;
+background:white;
+color:#075e35;
+border:0;
+padding:12px 20px;
+border-radius:9px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:24px;
+}
+
+.section-title h2{
+color:#075e35;
+margin-bottom:5px;
+}
+
+.section-title p{
+color:#666;
+}
+
+.cards{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(240px,1fr));
+gap:16px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:13px;
+box-shadow:0 3px 15px rgba(0,0,0,.07);
+margin-bottom:15px;
+}
+
+.card h3{
+color:#075e35;
+margin-bottom:8px;
+}
+
+.notice{
+border-left:5px solid #087b42;
+}
+
+.objective-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(230px,1fr));
+gap:16px;
+}
+
+.objective{
+background:white;
+padding:22px;
+border-radius:13px;
+box-shadow:0 3px 15px rgba(0,0,0,.07);
+text-align:center;
+}
+
+.objective .icon{
+font-size:35px;
+margin-bottom:10px;
+}
+
+.objective h3{
+color:#075e35;
+margin-bottom:7px;
+}
+
+.donation-card{
+border-left:5px solid #f0a000;
+}
+
+.donation-amount{
+font-size:24px;
+font-weight:bold;
+color:#d88900;
+margin:8px 0;
+}
+
+.primary{
+width:100%;
+background:#087b42;
+color:white;
+border:0;
+padding:13px;
+border-radius:9px;
+cursor:pointer;
+font-weight:bold;
+font-size:14px;
+}
+
+.primary:hover{
+background:#075e35;
+}
+
+.secondary{
+background:#eee;
+border:0;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.danger{
+background:#c62828!important;
+color:white!important;
+}
+
+.hidden{
+display:none!important;
+}
+
+.login-box{
+max-width:450px;
+margin:25px auto;
+text-align:center;
+}
+
+.admin{
+background:#eafff2;
+padding:35px 0 60px;
+}
+
+.admin-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(270px,1fr));
+gap:18px;
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:11px;
+border:1px solid #ddd;
+border-radius:8px;
+margin:6px 0 12px;
+font-size:14px;
+}
+
+textarea{
+min-height:100px;
+resize:vertical;
+}
+
+label{
+font-weight:bold;
+font-size:14px;
+}
+
+.social{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin-top:18px;
+}
+
+.social a{
+text-decoration:none;
+color:white;
+padding:10px 16px;
+border-radius:8px;
+font-weight:bold;
+}
+
+.facebook{
+background:#1877f2;
+}
+
+.whatsapp{
+background:#25d366;
+}
+
+.status{
+text-align:center;
+margin:10px 0;
+font-weight:bold;
+}
+
+.success{
+color:#087b42;
+}
+
+.error{
+color:#c62828;
+}
+
+.loading{
+text-align:center;
+padding:20px;
+color:#777;
+}
+
+footer{
+background:#062f1d;
+color:white;
+text-align:center;
+padding:35px 18px;
+}
+
+footer strong{
+color:#7dffb0;
+}
+
+@media(max-width:600px){
+
+.hero{
+padding:50px 16px;
+}
+
+.hero h1{
+font-size:27px;
+}
+
+.logo{
+font-size:15px;
+}
+
+nav button{
+font-size:11px;
+padding:8px 9px;
+}
+
+.container{
+padding:27px 12px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="header-inner">
+
+<div class="logo">
+
+<div class="logo-icon">
+🕌
+</div>
+
+<div>
+আত্ব ত্বালাবা ঐক্য পরিষদ
+</div>
+
+</div>
+
+
+<nav>
+
+<button onclick="go('home')">
+🏠 হোম
+</button>
+
+<button onclick="go('about')">
+🎯 উদ্দেশ্য
+</button>
+
+<button onclick="go('activities')">
+🤝 কার্যক্রম
+</button>
+
+<button onclick="go('notices')">
+📢 নোটিশ
+</button>
+
+<button onclick="go('members')">
+👥 সদস্য
+</button>
+
+<button onclick="go('donations')">
+💰 Donation
+</button>
+
+<button onclick="go('events')">
+📅 ইভেন্ট
+</button>
+
+<button onclick="go('competitions')">
+🏆 প্রতিযোগিতা
+</button>
+
+<button onclick="go('quizzes')">
+📝 Quiz
+</button>
+
+<button onclick="go('gallery')">
+🖼️ গ্যালারি
+</button>
+
+<button onclick="go('results')">
+📊 ফলাফল
+</button>
+
+<button onclick="showLogin()">
+🔐 Admin
+</button>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+<h1>
+আত্ব ত্বালাবা ঐক্য পরিষদ
+</h1>
+
+<p>
+ঐক্য • শিক্ষা • সেবা • মানবিকতা • উন্নয়ন
+</p>
+
+<button
+class="hero-btn"
+onclick="go('about')">
+
+🎯 আমাদের উদ্দেশ্য দেখুন
+
+</button>
+
+</section>
+
+
+<!-- ================= OBJECTIVES ================= -->
+
+<section id="about" class="container">
+
+<div class="section-title">
+
+<h2>
+🎯 সংগঠনের উদ্দেশ্য
+</h2>
+
+<p>
+আত্ব ত্বালাবা ঐক্য পরিষদের মূল লক্ষ্য ও উদ্দেশ্য
+</p>
+
+</div>
+
+
+<div class="objective-grid">
+
+
+<div class="objective">
+
+<div class="icon">
+🤝
+</div>
+
+<h3>
+ঐক্য
+</h3>
+
+<p>
+সকল সদস্যের মধ্যে ভ্রাতৃত্ব,
+ঐক্য ও পারস্পরিক সহযোগিতা
+বৃদ্ধি করা।
+</p>
+
+</div>
+
+
+<div class="objective">
+
+<div class="icon">
+📚
+</div>
+
+<h3>
+শিক্ষা
+</h3>
+
+<p>
+শিক্ষার্থীদের জ্ঞান, দক্ষতা ও
+শিক্ষার প্রতি আগ্রহ বৃদ্ধি করা।
+</p>
+
+</div>
+
+
+<div class="objective">
+
+<div class="icon">
+❤️
+</div>
+
+<h3>
+মানবিক সেবা
+</h3>
+
+<p>
+অসহায় ও প্রয়োজনীয় মানুষের পাশে
+দাঁড়ানো এবং মানবিক সহযোগিতা
+প্রদান করা।
+</p>
+
+</div>
+
+
+<div class="objective">
+
+<div class="icon">
+🌱
+</div>
+
+<h3>
+সামাজিক উন্নয়ন
+</h3>
+
+<p>
+সমাজের ইতিবাচক উন্নয়নের জন্য
+বিভিন্ন কার্যক্রম পরিচালনা করা।
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= ACTIVITIES ================= -->
+
+<section id="activities" class="container">
+
+<div class="section-title">
+
+<h2>
+🤝 সংগঠনের কার্যক্রম
+</h2>
+
+<p>
+আমাদের বিভিন্ন কার্যক্রম
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+📖 শিক্ষামূলক কার্যক্রম
+</h3>
+
+<p>
+শিক্ষার্থীদের জন্য শিক্ষামূলক
+আলোচনা, জ্ঞানচর্চা, পরামর্শ ও
+বিভিন্ন শিক্ষামূলক আয়োজন করা।
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+❤️ মানবিক সেবা
+</h3>
+
+<p>
+অসহায় মানুষের পাশে দাঁড়ানো,
+প্রয়োজনে সহযোগিতা করা এবং
+মানবিক সেবামূলক কার্যক্রম
+পরিচালনা করা।
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🏆 প্রতিযোগিতা
+</h3>
+
+<p>
+সদস্য ও শিক্ষার্থীদের প্রতিভা
+বিকাশের জন্য বিভিন্ন প্রতিযোগিতা
+আয়োজন করা।
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🌳 সামাজিক কার্যক্রম
+</h3>
+
+<p>
+সামাজিক সচেতনতা, পরিবেশ
+সংরক্ষণ এবং সমাজের ইতিবাচক
+পরিবর্তনের জন্য কাজ করা।
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🤝 সদস্য সহযোগিতা
+</h3>
+
+<p>
+সংগঠনের সদস্যদের প্রয়োজনীয়
+পরামর্শ, সহযোগিতা ও পারস্পরিক
+সম্পর্ক উন্নয়ন করা।
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+📢 সচেতনতা
+</h3>
+
+<p>
+শিক্ষা, সমাজ ও মানবিক বিষয়ে
+সচেতনতা তৈরির জন্য বিভিন্ন
+কার্যক্রম পরিচালনা করা।
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= NOTICE ================= -->
+
+<section id="notices" class="container">
+
+<div class="section-title">
+
+<h2>
+📢 নোটিশ
+</h2>
+
+<p>
+গুরুত্বপূর্ণ ঘোষণা
+</p>
+
+</div>
+
+<div id="noticeList">
+
+<div class="loading">
+নোটিশ লোড হচ্ছে...
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= MEMBERS ================= -->
+
+<section id="members" class="container">
+
+<div class="section-title">
+
+<h2>
+👥 সদস্যবৃন্দ
+</h2>
+
+<p>
+আমাদের সদস্যদের তথ্য
+</p>
+
+</div>
+
+<div id="memberList" class="cards">
+
+<div class="loading">
+সদস্য তথ্য লোড হচ্ছে...
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= DONATION ================= -->
+
+<section id="donations" class="container">
+
+<div class="section-title">
+
+<h2>
+💰 Donation
+</h2>
+
+<p>
+সংগঠনের মানবিক ও সেবামূলক কার্যক্রমে সহযোগিতা
+</p>
+
+</div>
+
+<div id="donationList">
+
+<div class="loading">
+Donation তথ্য লোড হচ্ছে...
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= EVENTS ================= -->
+
+<section id="events" class="container">
+
+<div class="section-title">
+
+<h2>
+📅 ইভেন্ট
+</h2>
+
+<p>
+আসন্ন কার্যক্রম
+</p>
+
+</div>
+
+<div id="eventList">
+
+<div class="loading">
+ইভেন্ট লোড হচ্ছে...
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= COMPETITIONS ================= -->
+
+<section id="competitions" class="container">
+
+<div class="section-title">
+
+<h2>
+🏆 প্রতিযোগিতা
+</h2>
+
+<p>
+আমাদের বিভিন্ন প্রতিযোগিতা
+</p>
+
+</div>
+
+<div id="competitionList">
+
+<div class="loading">
+প্রতিযোগিতা লোড হচ্ছে...
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= QUIZZES ================= -->
+
+<section id="quizzes" class="container">
+
+<div class="section-title">
+
+<h2>
+📝 Quiz
+</h2>
+
+<p>
+জ্ঞান যাচাই ও শিক্ষামূলক কুইজ
+</p>
+
+</div>
+
+<div id="quizList">
+
+<div class="loading">
+Quiz লোড হচ্ছে...
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" class="container">
+
+<div class="section-title">
+
+<h2>
+🖼️ গ্যালারি
+</h2>
+
+<p>
+আমাদের কার্যক্রমের ছবি
+</p>
+
+</div>
+
+<div id="galleryList" class="cards">
+
+<div class="loading">
+গ্যালারি লোড হচ্ছে...
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= RESULTS ================= -->
+
+<section id="results" class="container">
+
+<div class="section-title">
+
+<h2>
+📊 ফলাফল
+</h2>
+
+<p>
+প্রতিযোগিতা ও Quiz-এর ফলাফল
+</p>
+
+</div>
+
+<div id="resultList">
+
+<div class="loading">
+ফলাফল লোড হচ্ছে...
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SOCIAL ================= -->
+
+<section class="container">
+
+<div class="section-title">
+
+<h2>
+📱 আমাদের সাথে যোগাযোগ
+</h2>
+
+<p>
+Facebook ও WhatsApp
+</p>
+
+</div>
+
+<div id="socialLinks" class="social">
+
+<div class="loading">
+লিংক লোড হচ্ছে...
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= LOGIN ================= -->
+
+<section id="login" class="container hidden">
+
+<div class="login-box">
+
+<div class="section-title">
+
+<h2>
+🔐 Admin Login
+</h2>
+
+<p>
+Admin panel-এ প্রবেশ করতে Google account ব্যবহার করুন
+</p>
+
+</div>
+
+
+<div class="card">
+
+<button
+class="primary"
+onclick="googleLogin()">
+
+🔵 Google দিয়ে Login
+
+</button>
+
+<p
+id="loginStatus"
+class="status">
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ADMIN PANEL ================= -->
+
+<section id="adminPanel" class="admin hidden">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+⚙️ Admin Panel
+</h2>
+
+<p>
+আত্ব ত্বালাবা ঐক্য পরিষদ পরিচালনা
+</p>
+
+</div>
+
+
+<!-- ADMIN INFO -->
+
+<div class="card">
+
+<b>
+Admin:
+</b>
+
+<span id="adminEmail">
+</span>
+
+<button
+class="secondary danger"
+style="float:right"
+onclick="logout()">
+
+Logout
+
+</button>
+
+<div style="clear:both">
+</div>
+
+</div>
+
+
+<div class="admin-grid">
+
+
+<!-- NOTICE ADMIN -->
+
+<div class="card">
+
+<h3>
+📢 Notice যোগ করুন
+</h3>
+
+<form
+onsubmit="addNotice(event)">
+
+<label>
+Notice
+</label>
+
+<textarea
+id="noticeText"
+placeholder="নতুন নোটিশ লিখুন"
+required>
+</textarea>
+
+<button class="primary">
+Notice Publish
+</button>
+
+</form>
+
+</div>
+
+
+<!-- MEMBER ADMIN -->
+
+<div class="card">
+
+<h3>
+👤 সদস্য যোগ করুন
+</h3>
+
+<form
+onsubmit="addMember(event)">
+
+<label>
+নাম
+</label>
+
+<input
+id="memberName"
+placeholder="সদস্যের নাম"
+required>
+
+<label>
+পদবি
+</label>
+
+<input
+id="memberRole"
+placeholder="পদবি">
+
+<button class="primary">
+সদস্য যোগ করুন
+</button>
+
+</form>
+
+</div>
+
+
+<!-- DONATION ADMIN -->
+
+<div class="card">
+
+<h3>
+💰 Donation যোগ করুন
+</h3>
+
+<form
+onsubmit="addDonation(event)">
+
+<label>
+Donation Title
+</label>
+
+<input
+id="donationTitle"
+placeholder="যেমন: অসহায়দের সহযোগিতা"
+required>
+
+<label>
+প্রয়োজনীয় Amount
+</label>
+
+<input
+id="donationAmount"
+placeholder="যেমন: ৫০,০০০ টাকা">
+
+<label>
+বিস্তারিত
+</label>
+
+<textarea
+id="donationDetails"
+placeholder="Donation সম্পর্কে বিস্তারিত">
+</textarea>
+
+<label>
+Payment / Account Information
+</label>
+
+<textarea
+id="donationPayment"
+placeholder="বিকাশ/নগদ/ব্যাংক তথ্য">
+</textarea>
+
+<button class="primary">
+Donation Publish
+</button>
+
+</form>
+
+</div>
+
+
+<!-- EVENT ADMIN -->
+
+<div class="card">
+
+<h3>
+📅 Event যোগ করুন
+</h3>
+
+<form
+onsubmit="addEvent(event)">
+
+<label>
+Event Name
+</label>
+
+<input
+id="eventName"
+placeholder="ইভেন্টের নাম"
+required>
+
+<label>
+তারিখ
+</label>
+
+<input
+id="eventDate"
+placeholder="যেমন: ২০ আগস্ট ২০২৬">
+
+<button class="primary">
+Event Publish
+</button>
+
+</form>
+
+</div>
+
+
+<!-- COMPETITION ADMIN -->
+
+<div class="card">
+
+<h3>
+🏆 Competition যোগ করুন
+</h3>
+
+<form
+onsubmit="addCompetition(event)">
+
+<label>
+Competition Name
+</label>
+
+<input
+id="competitionName"
+placeholder="প্রতিযোগিতার নাম"
+required>
+
+<label>
+বিস্তারিত
+</label>
+
+<textarea
+id="competitionDetails"
+placeholder="প্রতিযোগিতার বিস্তারিত">
+</textarea>
+
+<button class="primary">
+Competition Publish
+</button>
+
+</form>
+
+</div>
+
+
+<!-- QUIZ ADMIN -->
+
+<div class="card">
+
+<h3>
+📝 Quiz যোগ করুন
+</h3>
+
+<form
+onsubmit="addQuiz(event)">
+
+<label>
+Quiz Title
+</label>
+
+<input
+id="quizTitle"
+placeholder="Quiz-এর নাম"
+required>
+
+<label>
+Quiz Details
+</label>
+
+<textarea
+id="quizDetails"
+placeholder="Quiz সম্পর্কে বিস্তারিত">
+</textarea>
+
+<button class="primary">
+Quiz Publish
+</button>
+
+</form>
+
+</div>
+
+
+<!-- GALLERY ADMIN -->
+
+<div class="card">
+
+<h3>
+🖼️ Gallery যোগ করুন
+</h3>
+
+<form
+onsubmit="addGallery(event)">
+
+<label>
+ছবির URL
+</label>
+
+<input
+id="galleryUrl"
+type="url"
+placeholder="https://..."
+required>
+
+<label>
+ছবির নাম
+</label>
+
+<input
+id="galleryTitle"
+placeholder="ছবির নাম">
+
+<button class="primary">
+Gallery Publish
+</button>
+
+</form>
+
+</div>
+
+
+<!-- RESULT ADMIN -->
+
+<div class="card">
+
+<h3>
+📊 Result যোগ করুন
+</h3>
+
+<form
+onsubmit="addResult(event)">
+
+<label>
+Result Title
+</label>
+
+<input
+id="resultTitle"
+placeholder="যেমন: Quiz Result"
+required>
+
+<label>
+ফলাফল
+</label>
+
+<textarea
+id="resultDetails"
+placeholder="ফলাফল লিখুন">
+</textarea>
+
+<button class="primary">
+Result Publish
+</button>
+
+</form>
+
+</div>
+
+
+<!-- SOCIAL ADMIN -->
+
+<div class="card">
+
+<h3>
+📱 Facebook / WhatsApp
+</h3>
+
+<form
+onsubmit="saveSocial(event)">
+
+<label>
+Facebook Link
+</label>
+
+<input
+id="facebookLink"
+type="url"
+placeholder="https://facebook.com/...">
+
+<label>
+WhatsApp Link
+</label>
+
+<input
+id="whatsappLink"
+type="url"
+placeholder="https://wa.me/8801XXXXXXXXX">
+
+<button class="primary">
+Social Link Save
+</button>
+
+</form>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div>
+
+© 2026
+<strong>
+আত্ব ত্বালাবা ঐক্য পরিষদ
+</strong>
+
+</div>
+
+<p style="margin-top:8px">
+
+Developed by
+<strong>
+Humayes Ahmed
+</strong>
+
+</p>
+
+</footer>
+
+
+<!-- ================= FIREBASE ================= -->
+
+<script type="module">
+
+import {
+initializeApp
+}
+from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+
+import {
+
+getAuth,
+GoogleAuthProvider,
+signInWithPopup,
+signOut,
+onAuthStateChanged
+
+}
+from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+
+import {
+
+getFirestore,
+collection,
+addDoc,
+getDocs,
+doc,
+setDoc,
+serverTimestamp
+
+}
+from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+
+/* ================= FIREBASE CONFIG ================= */
+
+const firebaseConfig = {
+
+apiKey:
+"AIzaSyCy4u5LixRmPHbFaGzmVTGIqxiqlwTlM-U",
+
+authDomain:
+"at-talaba-oikya-parishad.firebaseapp.com",
+
+projectId:
+"at-talaba-oikya-parishad",
+
+storageBucket:
+"at-talaba-oikya-parishad.firebasestorage.app",
+
+messagingSenderId:
+"326186660153",
+
+appId:
+"1:326186660153:web:f84b7ba4756ebaf77678e8",
+
+measurementId:
+"G-B15R7YH8SE"
+
+};
+
+
+/* ================= INITIALIZE ================= */
+
+const app =
+initializeApp(firebaseConfig);
+
+const auth =
+getAuth(app);
+
+const db =
+getFirestore(app);
+
+const provider =
+new GoogleAuthProvider();
+
+
+/* ================= ADMIN ================= */
+
+const ADMIN_EMAIL =
+"ahmedhumayes@gmail.com";
+
+
+/* ================= NAVIGATION ================= */
+
+window.go = function(id){
+
+const element =
+document.getElementById(id);
+
+if(element){
+
+element.scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+};
+
+
+/* ================= LOGIN ================= */
+
+window.showLogin = function(){
+
+document
+.getElementById("login")
+.classList
+.remove("hidden");
+
+document
+.getElementById("login")
+.scrollIntoView({
+behavior:"smooth"
+});
+
+};
+
+
+/* ================= GOOGLE LOGIN ================= */
+
+window.googleLogin = async function(){
+
+const status =
+document.getElementById("loginStatus");
+
+status.innerText =
+"Google Login হচ্ছে...";
+
+status.className =
+"status";
+
+
+try{
+
+const result =
+await signInWithPopup(
+auth,
+provider
+);
+
+const email =
+result.user.email;
+
+
+if(email !== ADMIN_EMAIL){
+
+await signOut(auth);
+
+status.innerText =
+"এই Google account Admin নয়।";
+
+status.className =
+"status error";
+
+return;
+
+}
+
+
+status.innerText =
+"Admin Login সফল হয়েছে।";
+
+status.className =
+"status success";
+
+
+}catch(error){
+
+console.error(error);
+
+status.innerText =
+"Login Error: " +
+error.message;
+
+status.className =
+"status error";
+
+}
+
+};
+
+
+/* ================= AUTH ================= */
+
+onAuthStateChanged(
+auth,
+user=>{
+
+const adminPanel =
+document.getElementById(
+"adminPanel"
+);
+
+const login =
+document.getElementById(
+"login"
+);
+
+
+if(
+user &&
+user.email === ADMIN_EMAIL
+){
+
+adminPanel
+.classList
+.remove("hidden");
+
+login
+.classList
+.add("hidden");
+
+document
+.getElementById(
+"adminEmail"
+)
+.innerText =
+user.email;
+
+go("adminPanel");
+
+}else{
+
+adminPanel
+.classList
+.add("hidden");
+
+}
+
+}
+);
+
+
+/* ================= LOGOUT ================= */
+
+window.logout =
+async function(){
+
+await signOut(auth);
+
+alert(
+"Admin Logout হয়েছে।"
+);
+
+go("home");
+
+};
+
+
+/* ================= ADMIN CHECK ================= */
+
+function isAdmin(){
+
+const user =
+auth.currentUser;
+
+return !!(
+user &&
+user.email === ADMIN_EMAIL
+);
+
+}
+
+
+/* ================= ADD NOTICE ================= */
+
+window.addNotice =
+async function(e){
+
+e.preventDefault();
+
+if(!isAdmin()){
+
+alert(
+"Admin Login required"
+);
+
+return;
+
+}
+
+
+const text =
+document
+.getElementById(
+"noticeText"
+)
+.value
+.trim();
+
+
+try{
+
+await addDoc(
+collection(db,"notices"),
+{
+
+text:text,
+
+createdAt:
+serverTimestamp()
+
+}
+);
+
+
+alert(
+"Notice Publish হয়েছে!"
+);
+
+
+document
+.getElementById(
+"noticeText"
+)
+.value="";
+
+
+loadNotices();
+
+
+}catch(error){
+
+alert(
+"Error: " +
+error.message
+);
+
+}
+
+};
+
+
+/* ================= ADD MEMBER ================= */
+
+window.addMember =
+async function(e){
+
+e.preventDefault();
+
+if(!isAdmin()){
+
+alert(
+"Admin Login required"
+);
+
+return;
+
+}
+
+
+const name =
+document
+.getElementById(
+"memberName"
+)
+.value
+.trim();
+
+
+const role =
+document
+.getElementById(
+"memberRole"
+)
+.value
+.trim();
+
+
+try{
+
+await addDoc(
+collection(db,"members"),
+{
+
+name:name,
+
+role:role,
+
+createdAt:
+serverTimestamp()
+
+}
+);
+
+
+alert(
+"সদস্য যোগ হয়েছে!"
+);
+
+
+document
+.getElementById(
+"memberName"
+)
+.value="";
+
+
+document
+.getElementById(
+"memberRole"
+)
+.value="";
+
+
+loadMembers();
+
+
+}catch(error){
+
+alert(
+"Error: " +
+error.message
+);
+
+}
+
+};
+
+
+/* ================= ADD DONATION ================= */
+
+window.addDonation =
+async function(e){
+
+e.preventDefault();
+
+if(!isAdmin()){
+
+alert(
+"Admin Login required"
+);
+
+return;
+
+}
+
+
+const title =
+document
+.getElementById(
+"donationTitle"
+)
+.value
+.trim();
+
+
+const amount =
+document
+.getElementById(
+"donationAmount"
+)
+.value
+.trim();
+
+
+const details =
+document
+.getElementById(
+"donationDetails"
+)
+.value
+.trim();
+
+
+const payment =
+document
+.getElementById(
+"donationPayment"
+)
+.value
+.trim();
+
+
+try{
+
+await addDoc(
+collection(db,"donations"),
+{
+
+title:title,
+
+amount:amount,
+
+details:details,
+
+payment:payment,
+
+createdAt:
+serverTimestamp()
+
+}
+);
+
+
+alert(
+"Donation Publish হয়েছে!"
+);
+
+
+document
+.getElementById(
+"donationTitle"
+)
+.value="";
+
+
+document
+.getElementById(
+"donationAmount"
+)
+.value="";
+
+
+document
+.getElementById(
+"donationDetails"
+)
+.value="";
+
+
+document
+.getElementById(
+"donationPayment"
+)
+.value="";
+
+
+loadDonations();
+
+
+}catch(error){
+
+alert(
+"Error: " +
+error.message
+);
+
+}
+
+};
+
+
+/* ================= ADD EVENT ================= */
+
+window.addEvent =
+async function(e){
+
+e.preventDefault();
+
+if(!isAdmin()){
+
+alert(
+"Admin Login required"
+);
+
+return;
+
+}
+
+
+const name =
+document
+.getElementById(
+"eventName"
+)
+.value
+.trim();
+
+
+const date =
+document
+.getElementById(
+"eventDate"
+)
+.value
+.trim();
+
+
+try{
+
+await addDoc(
+collection(db,"events"),
+{
+
+name:name,
+
+date:date,
+
+createdAt:
+serverTimestamp()
+
+}
+);
+
+
+alert(
+"Event Publish হয়েছে!"
+);
+
+
+document
+.getElementById(
+"eventName"
+)
+.value="";
+
+
+document
+.getElementById(
+"eventDate"
+)
+.value="";
+
+
+loadEvents();
+
+
+}catch(error){
+
+alert(
+"Error: " +
+error.message
+);
+
+}
+
+};
+
+
+/* ================= ADD COMPETITION ================= */
+
+window.addCompetition =
+async function(e){
+
+e.preventDefault();
+
+if(!isAdmin()){
+
+alert(
+"Admin Login required"
+);
+
+return;
+
+}
+
+
+const name =
+document
+.getElementById(
+"competitionName"
+)
+.value
+.trim();
+
+
+const details =
+document
+.getElementById(
+"competitionDetails"
+)
+.value
+.trim();
+
+
+try{
+
+await addDoc(
+collection(db,"competitions"),
+{
+
+name:name,
+
+details:details,
+
+createdAt:
+serverTimestamp()
+
+}
+);
+
+
+alert(
+"Competition Publish হয়েছে!"
+);
+
+
+document
+.getElementById(
+"competitionName"
+)
+.value="";
+
+
+document
+.getElementById(
+"competitionDetails"
+)
+.value="";
+
+
+loadCompetitions();
+
+
+}catch(error){
+
+alert(
+"Error: " +
+error.message
+);
+
+}
+
+};
+
+
+/* ================= ADD QUIZ ================= */
+
+window.addQuiz =
+async function(e){
+
+e.preventDefault();
+
+if(!isAdmin()){
+
+alert(
+"Admin Login required"
+);
+
+return;
+
+}
+
+
+const title =
+document
+.getElementById(
+"quizTitle"
+)
+.value
+.trim();
+
+
+const details =
+document
+.getElementById(
+"quizDetails"
+)
+.value
+.trim();
+
+
+try{
+
+await addDoc(
+collection(db,"quizzes"),
+{
+
+title:title,
+
+details:details,
+
+createdAt:
+serverTimestamp()
+
+}
+);
+
+
+alert(
+"Quiz Publish হয়েছে!"
+);
+
+
+document
+.getElementById(
+"quizTitle"
+)
+.value="";
+
+
+document
+.getElementById(
+"quizDetails"
+)
+.value="";
+
+
+loadQuizzes();
+
+
+}catch(error){
+
+alert(
+"Error: " +
+error.message
+);
+
+}
+
+};
+
+
+/* ================= ADD GALLERY ================= */
+
+window.addGallery =
+async function(e){
+
+e.preventDefault();
+
+if(!isAdmin()){
+
+alert(
+"Admin Login required"
+);
+
+return;
+
+}
+
+
+const url =
+document
+.getElementById(
+"galleryUrl"
+)
+.value
+.trim();
+
+
+const title =
+document
+.getElementById(
+"galleryTitle"
+)
+.value
+.trim();
+
+
+try{
+
+await addDoc(
+collection(db,"gallery"),
+{
+
+url:url,
+
+title:title,
+
+createdAt:
+serverTimestamp()
+
+}
+);
+
+
+alert(
+"Gallery Publish হয়েছে!"
+);
+
+
+document
+.getElementById(
+"galleryUrl"
+)
+.value="";
+
+
+document
+.getElementById(
+"galleryTitle"
+)
+.value="";
+
+
+loadGallery();
+
+
+}catch(error){
+
+alert(
+"Error: " +
+error.message
+);
+
+}
+
+};
+
+
+/* ================= ADD RESULT ================= */
+
+window.addResult =
+async function(e){
+
+e.preventDefault();
+
+if(!isAdmin()){
+
+alert(
+"Admin Login required"
+);
+
+return;
+
+}
+
+
+const title =
+document
+.getElementById(
+"resultTitle"
+)
+.value
+.trim();
+
+
+const details =
+document
+.getElementById(
+"resultDetails"
+)
+.value
+.trim();
+
+
+try{
+
+await addDoc(
+collection(db,"results"),
+{
+
+title:title,
+
+details:details,
+
+createdAt:
+serverTimestamp()
+
+}
+);
+
+
+alert(
+"Result Publish হয়েছে!"
+);
+
+
+document
+.getElementById(
+"resultTitle"
+)
+.value="";
+
+
+document
+.getElementById(
+"resultDetails"
+)
+.value="";
+
+
+loadResults();
+
+
+}catch(error){
+
+alert(
+"Error: " +
+error.message
+);
+
+}
+
+};
+
+
+/* ================= SOCIAL ================= */
+
+window.saveSocial =
+async function(e){
+
+e.preventDefault();
+
+if(!isAdmin()){
+
+alert(
+"Admin Login required"
+);
+
+return;
+
+}
+
+
+const facebook =
+document
+.getElementById(
+"facebookLink"
+)
+.value
+.trim();
+
+
+const whatsapp =
+document
+.getElementById(
+"whatsappLink"
+)
+.value
+.trim();
+
+
+try{
+
+await setDoc(
+doc(
+db,
+"settings",
+"social"
+),
+{
+
+facebook:facebook,
+
+whatsapp:whatsapp,
+
+updatedAt:
+serverTimestamp()
+
+}
+);
+
+
+alert(
+"Facebook ও WhatsApp Save হয়েছে!"
+);
+
+
+loadSocial();
+
+
+}catch(error){
+
+alert(
+"Error: " +
+error.message
+);
+
+}
+
+};
+
+
+/* ================= LOAD NOTICE ================= */
+
+async function loadNotices(){
+
+const box =
+document.getElementById(
+"noticeList"
+);
+
+try{
+
+const snap =
+await getDocs(
+collection(db,"notices")
+);
+
+
+if(snap.empty){
+
+box.innerHTML=
+`
+<div class="card">
+এখনো কোনো নোটিশ নেই।
+</div>
+`;
+
+return;
+
+}
+
+
+box.innerHTML="";
+
+
+snap.forEach(item=>{
+
+const data =
+item.data();
+
+
+box.innerHTML +=
+`
+<div class="card notice">
+
+<h3>
+📢 নোটিশ
+</h3>
+
+<p>
+${escapeHTML(
+data.text || ""
+)}
+</p>
+
+</div>
+`;
+
+});
+
+
+}catch(error){
+
+box.innerHTML=
+`
+<div class="card">
+নোটিশ লোড করা যায়নি।
+</div>
+`;
+
+}
+
+}
+
+
+/* ================= LOAD MEMBERS ================= */
+
+async function loadMembers(){
+
+const box =
+document.getElementById(
+"memberList"
+);
+
+try{
+
+const snap =
+await getDocs(
+collection(db,"members")
+);
+
+
+if(snap.empty){
+
+box.innerHTML=
+`
+<div class="card">
+এখনো কোনো সদস্য যোগ করা হয়নি।
+</div>
+`;
+
+return;
+
+}
+
+
+box.innerHTML="";
+
+
+snap.forEach(item=>{
+
+const data =
+item.data();
+
+
+box.innerHTML +=
+`
+<div class="card">
+
+<h3>
+👤
+${escapeHTML(
+data.name || ""
+)}
+</h3>
+
+<p>
+${escapeHTML(
+data.role || ""
+)}
+</p>
+
+</div>
+`;
+
+});
+
+
+}catch(error){
+
+box.innerHTML=
+`
+<div class="card">
+সদস্য তথ্য লোড করা যায়নি।
+</div>
+`;
+
+}
+
+}
+
+
+/* ================= LOAD DONATIONS ================= */
+
+async function loadDonations(){
+
+const box =
+document.getElementById(
+"donationList"
+);
+
+try{
+
+const snap =
+await getDocs(
+collection(db,"donations")
+);
+
+
+if(snap.empty){
+
+box.innerHTML=
+`
+<div class="card">
+বর্তমানে কোনো Donation কার্যক্রম নেই।
+</div>
+`;
+
+return;
+
+}
+
+
+box.innerHTML="";
+
+
+snap.forEach(item=>{
+
+const data =
+item.data();
+
+
+box.innerHTML +=
+`
+<div class="card donation-card">
+
+<h3>
+💰
+${escapeHTML(
+data.title || ""
+)}
+</h3>
+
+<div class="donation-amount">
+${escapeHTML(
+data.amount || ""
+)}
+</div>
+
+<p>
+${escapeHTML(
+data.details || ""
+)}
+</p>
+
+${
+data.payment
+?
+`
+<div style="
+margin-top:12px;
+padding:12px;
+background:#fff8e6;
+border-radius:8px;
+">
+
+<b>
+💳 সহযোগিতার তথ্য:
+</b>
+
+<br>
+
+${escapeHTML(
+data.payment
+)}
+
+</div>
+`
+:
+""
+}
+
+</div>
+`;
+
+});
+
+
+}catch(error){
+
+box.innerHTML=
+`
+<div class="card">
+Donation তথ্য লোড করা যায়নি।
+</div>
+`;
+
+}
+
+}
+
+
+/* ================= LOAD EVENTS ================= */
+
+async function loadEvents(){
+
+const box =
+document.getElementById(
+"eventList"
+);
+
+try{
+
+const snap =
+await getDocs(
+collection(db,"events")
+);
+
+
+if(snap.empty){
+
+box.innerHTML=
+`
+<div class="card">
+এখনো কোনো Event নেই।
+</div>
+`;
+
+return;
+
+}
+
+
+box.innerHTML="";
+
+
+snap.forEach(item=>{
+
+const data =
+item.data();
+
+
+box.innerHTML +=
+`
+<div class="card">
+
+<h3>
+📅
+${escapeHTML(
+data.name || ""
+)}
+</h3>
+
+<p>
+তারিখ:
+${escapeHTML(
+data.date || ""
+)}
+</p>
+
+</div>
+`;
+
+});
+
+
+}catch(error){
+
+box.innerHTML=
+`
+<div class="card">
+Event লোড করা যায়নি।
+</div>
+`;
+
+}
+
+}
+
+
+/* ================= LOAD COMPETITIONS ================= */
+
+async function loadCompetitions(){
+
+const box =
+document.getElementById(
+"competitionList"
+);
+
+try{
+
+const snap =
+await getDocs(
+collection(db,"competitions")
+);
+
+
+if(snap.empty){
+
+box.innerHTML=
+`
+<div class="card">
+এখনো কোনো প্রতিযোগিতা নেই।
+</div>
+`;
+
+return;
+
+}
+
+
+box.innerHTML="";
+
+
+snap.forEach(item=>{
+
+const data =
+item.data();
+
+
+box.innerHTML +=
+`
+<div class="card">
+
+<h3>
+🏆
+${escapeHTML(
+data.name || ""
+)}
+</h3>
+
+<p>
+${escapeHTML(
+data.details || ""
+)}
+</p>
+
+</div>
+`;
+
+});
+
+
+}catch(error){
+
+box.innerHTML=
+`
+<div class="card">
+প্রতিযোগিতা লোড করা যায়নি।
+</div>
+`;
+
+}
+
+}
+
+
+/* ================= LOAD QUIZZES ================= */
+
+async function loadQuizzes(){
+
+const box =
+document.getElementById(
+"quizList"
+);
+
+try{
+
+const snap =
+await getDocs(
+collection(db,"quizzes")
+);
+
+
+if(snap.empty){
+
+box.innerHTML=
+`
+<div class="card">
+এখনো কোনো Quiz নেই।
+</div>
+`;
+
+return;
+
+}
+
+
+box.innerHTML="";
+
+
+snap.forEach(item=>{
+
+const data =
+item.data();
+
+
+box.innerHTML +=
+`
+<div class="card">
+
+<h3>
+📝
+${escapeHTML(
+data.title || ""
+)}
+</h3>
+
+<p>
+${escapeHTML(
+data.details || ""
+)}
+</p>
+
+</div>
+`;
+
+});
+
+
+}catch(error){
+
+box.innerHTML=
+`
+<div class="card">
+Quiz লোড করা যায়নি।
+</div>
+`;
+
+}
+
+}
+
+
+/* ================= LOAD GALLERY ================= */
+
+async function loadGallery(){
+
+const box =
+document.getElementById(
+"galleryList"
+);
+
+try{
+
+const snap =
+await getDocs(
+collection(db,"gallery")
+);
+
+
+if(snap.empty){
+
+box.innerHTML=
+`
+<div class="card">
+এখনো কোনো ছবি নেই।
+</div>
+`;
+
+return;
+
+}
+
+
+box.innerHTML="";
+
+
+snap.forEach(item=>{
+
+const data =
+item.data();
+
+
+box.innerHTML +=
+`
+<div class="card">
+
+<img
+
+src="${escapeAttribute(
+data.url || ""
+)}"
+
+alt="${escapeAttribute(
+data.title || "Gallery"
+)}"
+
+style="
+width:100%;
+border-radius:10px;
+"
+
+onerror="
+this.style.display='none'
+">
+
+<h3 style="margin-top:10px">
+
+${escapeHTML(
+data.title || ""
+)}
+
+</h3>
+
+</div>
+`;
+
+});
+
+
+}catch(error){
+
+box.innerHTML=
+`
+<div class="card">
+Gallery লোড করা যায়নি।
+</div>
+`;
+
+}
+
+}
+
+
+/* ================= LOAD RESULTS ================= */
+
+async function loadResults(){
+
+const box =
+document.getElementById(
+"resultList"
+);
+
+try{
+
+const snap =
+await getDocs(
+collection(db,"results")
+);
+
+
+if(snap.empty){
+
+box.innerHTML=
+`
+<div class="card">
+এখনো কোনো ফলাফল প্রকাশ করা হয়নি।
+</div>
+`;
+
+return;
+
+}
+
+
+box.innerHTML="";
+
+
+snap.forEach(item=>{
+
+const data =
+item.data();
+
+
+box.innerHTML +=
+`
+<div class="card">
+
+<h3>
+📊
+${escapeHTML(
+data.title || ""
+)}
+</h3>
+
+<p>
+${escapeHTML(
+data.details || ""
+)}
+</p>
+
+</div>
+`;
+
+});
+
+
+}catch(error){
+
+box.innerHTML=
+`
+<div class="card">
+ফলাফল লোড করা যায়নি।
+</div>
+`;
+
+}
+
+}
+
+
+/* ================= LOAD SOCIAL ================= */
+
+async function loadSocial(){
+
+const box =
+document.getElementById(
+"socialLinks"
+);
+
+try{
+
+const socialDoc =
+await getDocs(
+collection(db,"settings")
+);
+
+let social=null;
+
+
+socialDoc.forEach(item=>{
+
+if(item.id === "social"){
+
+social =
+item.data();
+
+}
+
+});
+
+
+if(
+!social ||
+(
+!social.facebook &&
+!social.whatsapp
+)
+){
+
+box.innerHTML=
+`
+<p style="color:#777">
+Facebook ও WhatsApp link এখনো যোগ করা হয়নি।
+</p>
+`;
+
+return;
+
+}
+
+
+box.innerHTML="";
+
+
+if(social.facebook){
+
+box.innerHTML +=
+`
+<a
+
+class="facebook"
+
+href="${escapeAttribute(
+social.facebook
+)}"
+
+target="_blank"
+
+rel="noopener">
+
+📘 Facebook
+
+</a>
+`;
+
+}
+
+
+if(social.whatsapp){
+
+box.innerHTML +=
+`
+<a
+
+class="whatsapp"
+
+href="${escapeAttribute(
+social.whatsapp
+)}"
+
+target="_blank"
+
+rel="noopener">
+
+💬 WhatsApp
+
+</a>
+`;
+
+}
+
+
+}catch(error){
+
+box.innerHTML=
+`
+<p>
+Social link লোড করা যায়নি।
+</p>
+`;
+
+}
+
+}
+
+
+/* ================= SECURITY ================= */
+
+function escapeHTML(value){
+
+return String(value)
+
+.replaceAll(
+"&",
+"&amp;"
+)
+
+.replaceAll(
+"<",
+"&lt;"
+)
+
+.replaceAll(
+">",
+"&gt;"
+)
+
+.replaceAll(
+'"',
+"&quot;"
+)
+
+.replaceAll(
+"'",
+"&#039;"
+);
+
+}
+
+
+function escapeAttribute(value){
+
+return escapeHTML(value);
+
+}
+
+
+/* ================= START ================= */
+
+loadNotices();
+
+loadMembers();
+
+loadDonations();
+
+loadEvents();
+
+loadCompetitions();
+
+loadQuizzes();
+
+loadGallery();
+
+loadResults();
+
+loadSocial();
+
+</script>
+
+</body>
+  </html>
